@@ -1,0 +1,13 @@
+main()
+{int n;
+printf("enter a number\n");
+scanf("%d",&n);
+if(n>0)
+{
+ printf("%d is a positive number",n);
+}
+else
+{
+PRINTF("THE NUMBER IS NON-POSITIVE");
+}
+}
