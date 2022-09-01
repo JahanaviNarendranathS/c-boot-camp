@@ -1,0 +1,142 @@
+Assignment - 6 A Job Ready Bootcamp in C++, DSA and IOT MySirG
+
+Use any loop
+
+1. Write a program to calculate sum of first N natural numbers
+int sum=0,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+sum=sum+i;
+}
+printf("%d is the sum",sum);
+
+2. Write a program to calculate sum of first N even natural numbers
+main()
+{
+int sum=0,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=2n;i++)
+{if(i%2==0)
+{sum=sum+i
+}
+}
+printf("%d is the sum",sum);
+}
+
+3. Write a program to calculate sum of first N odd natural numbers
+main()
+{
+int sum=0,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=2n;i++)
+{if(i%2)
+{sum=sum+i
+}
+}
+printf("%d is the sum",sum);
+}
+
+4. Write a program to calculate sum of squares of first N natural numbers
+main()
+{
+int sum=0,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+sum=sum+(i*i);
+}
+printf("%d is the sum",sum);
+}
+
+5. Write a program to calculate sum of cubes of first N natural numbers
+main()
+{
+int sum=0,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+sum=sum+(i*i*i);
+}
+printf("%d is the sum",sum);
+}
+
+6. Write a program to calculate factorial of a number
+main()
+{
+int fact=1,n,i;
+printf("enter a number\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+printf("%d is the factorial",fact);
+}
+
+7. Write a program to count digits in a given number
+main()
+{int n,dig=0;
+printf("enter a number\n");
+scanf("%d,&n");
+while(n)
+{
+if(n%10)
+{dig=dig+1;}
+n=n/10;
+}
+printf("the number of digits are %d",dig);
+}
+
+8. Write a program to check whether a given number is a Prime number or
+not
+main()
+{
+int n,i;
+printf("enter a number\n");
+scanf("%d,&n");
+for(i=2;i<n;i++)
+{
+if(n%i==0)
+{
+break;
+}
+}
+  if(i==n)
+  {
+   printf("%d is a prime number",n);}
+   else{printf("%d is not a prime number",n);}}
+
+
+9. Write a program to calculate LCM of two numbers
+main()
+{
+int m,n,low,x,lcm=1;
+printf("enter 2 numbers\n");
+scanf("%d%d",&m,&n);
+if(m<n){low=m;}else{low=n;}
+for(x=2;x<low;)
+ {
+  if(m%x==0&&n%x==0)
+  {
+     lcm=lcm*x;
+     m=m/x;
+     n=n/x;
+     x=2;
+  }
+else{x++;}
+  if(m<n)
+  {low=m;}
+  else{low=n;}
+}
+if(m//n)
+  {lcm=lcm*m*n;}
+printf("%d is the lcm",lcm);
+}
+
+10. Write a program to reverse a given number
